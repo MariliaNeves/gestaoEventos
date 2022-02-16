@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gestao.apps.GestaoConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -78,14 +79,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    },
-    'oracle': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'xe',
-        'USER': 'a_user',
-        'PASSWORD': 'a_password',
-        'HOST': '',
-        'PORT': '',
     }
 }
 
