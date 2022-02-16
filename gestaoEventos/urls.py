@@ -17,10 +17,17 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from gestao.views import CidadeViewSet
+from gestao.views import CidadeViewSet, EventoViewSet, CampeonatoViewSet, ClassificacaoClubeViewSet, ClubeViewSet, \
+    FaseViewSet, JogoViewSet
 
 router = routers.DefaultRouter()
-router.register('cidade', CidadeViewSet, basename='comic')
+router.register('cidade', CidadeViewSet, basename='cidade')
+router.register('evento', EventoViewSet, basename='evento')
+router.register('campeonato', CampeonatoViewSet, basename='campeonato')
+router.register('classificacaoClube', ClassificacaoClubeViewSet, basename='classificacaoClube')
+router.register('clube', ClubeViewSet, basename='clube')
+router.register('fase', FaseViewSet, basename='fase')
+router.register('jogo', JogoViewSet, basename='jogo')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
