@@ -1,1 +1,1 @@
-# Gestão de eventos de futebol ou lutas.
+# Gestão de eventos de futebol e lutas.
